@@ -1,0 +1,54 @@
+<screen>
+    <consts>
+
+        <string name="from_city" value="EDL Eldoret\nGOM Goma\nKIS Kisumu\nLAU Lamu\nMYD Malindi\nMBA Mombasa\nNBO Nairobi\nUKA Ukunda\nZNZ Zanzibar" />
+
+        
+    </consts>
+
+    <styles>
+
+        <style name="drop_down_main"
+            width="210"
+            height="50"
+            bg_color="0xFFFFFF"
+            border_color="0xE20177" 
+            text_color="0xE20177"
+            text_font="nn_regular_24"
+            
+            />
+        <style name="drop_down_selected"
+            width="180"
+            height="50"
+            bg_color="0xFFFFFF"
+            border_color="0xE20177" 
+            text_color="0xE20177"
+            text_font="nn_regular_24"
+            
+            />
+        <style name="no_bar"
+            outline_opa="0"
+            outline_width="0"
+            bg_opa="0" />
+        
+    </styles>
+    <view extends="lv_obj" styles="light_theme">
+
+        <lv_obj styles="drop_down_main no_bar:scrollbar" width="440" align="top_mid" y="50">
+            <lv_label text="11/05/2025" align="center"></lv_label>
+        </lv_obj>
+        <lv_dropdown styles="drop_down_selected" x="50" y="120" options="Nairobi (NBO)" symbol=""></lv_dropdown>
+        <lv_image src="airplane_icon" align="top_mid" y="130"></lv_image>
+        <lv_dropdown styles="drop_down_selected" align="top_right" x="-50" y="120" options="Eldoret (EDL)" symbol=""></lv_dropdown>
+        <lv_label text="Available Flights" align="top_mid" y="200" style_text_font="nn_regular_24"></lv_label>
+        <lv_obj styles="light_theme flex_ver no_bar:scrollbar" width="540" height="710" style_pad_all="0" style_pad_row="20" align="top_mid" y="250">
+
+            <flights ></flights>
+            <flights ></flights>
+            <flights ></flights>
+            <flights ></flights>
+            <flights ></flights>
+            
+        </lv_obj>
+    </view>
+</screen>

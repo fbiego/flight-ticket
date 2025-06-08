@@ -1,0 +1,64 @@
+<component>
+    <previews>
+        <preview height="110" width="440"/>
+    </previews>
+    <api>
+        <prop name="from_city" type="string" default="Nairobi (NBO)"></prop>
+        <prop name="to_city" type="string" default="Eldoret (EDL)"></prop>
+        <prop name="departure" type="string" default="12:25"></prop>
+        <prop name="arrival" type="string" default="13:25"></prop>
+        <prop name="cost" type="string" default="KES 7,100"></prop>
+        <prop name="duration" type="string" default="1h 00m"></prop>
+    </api>
+
+    <styles>
+        <style name="card_outline"
+            width="440"
+            height="110"
+            bg_color="0xFFFFFF"
+            border_color="0xE20177" 
+            border_width="2"
+            radius="10"
+            text_color="0xE20177"
+            text_font="nn_regular_24"
+            pad_all="10"
+            />
+        <style name="slider"
+            width="380"
+            height="2"
+            bg_color="0xE20177"
+            />
+        <style name="slider_indic"
+            bg_color="0xE20177"
+            border_color="0x54022c" 
+            bg_opa="155"
+            width="20"
+            />
+        <style name="slider_knob"
+            bg_color="0xE20177"
+            border_color="0xE20177" 
+            width="24"
+            bg_opa="0"
+            pad_all="20"
+            bg_image_src="airplane_icon"
+            />
+    </styles>
+
+    <view extends="lv_obj" styles="light_theme card_outline">
+
+        <lv_label text="$departure"></lv_label>
+        <lv_label text="$from_city" align="bottom_left" style_text_font="nn_regular_16"></lv_label>
+
+        <lv_label text="$arrival" align="top_right"></lv_label>
+        <lv_label text="$to_city" align="bottom_right" style_text_font="nn_regular_16"></lv_label>
+
+        <lv_label text="$duration" align="bottom_mid" style_text_font="nn_bold_24"></lv_label>
+
+        <lv_label text="$cost" align="top_mid" style_text_font="nn_regular_24"></lv_label>
+
+        <lv_slider styles="slider slider_indic:indicator slider_knob:knob" align="center" value="10"></lv_slider>
+
+
+    </view>
+    
+</component>

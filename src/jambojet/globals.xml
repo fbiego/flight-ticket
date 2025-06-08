@@ -1,0 +1,79 @@
+<globals>
+    <api>
+        <!-- Add <enumdefs> here -->
+    </api>
+
+    <consts>
+        <!-- Add <px>, <int>, <color> etc here -->
+    </consts>
+
+    <styles>
+        <!-- Add <style> tags here -->
+        <style name="dark_theme"
+            bg_color="0x000000"
+            text_color="0xffffff"
+            pad_all="0"
+            radius="0"
+            border_width="0"
+            width="100%"
+            height="100%"
+            />
+
+        <style name="light_theme"
+            bg_color="0xffffff"
+            pad_all="0"
+            radius="0"
+            border_width="0"
+            width="100%"
+            height="100%"
+            text_color="0xE20177"
+            text_font="nn_regular_24"
+
+            />
+
+        <style name="flex_ver"
+            layout="flex"
+            flex_flow="column"
+            pad_row="50"
+            flex_track_place="center"
+            flex_main_place="start"
+            flex_cross_place="center"
+            pad_all="50"
+            
+            />
+    </styles>
+
+    <images>
+        <!-- Add <file> or <data> tags here -->
+        <file name="logo" src_path="images/logo.png" file_format="png"/>
+        <file name="emerald_icon" src_path="images/emerald_icon.png" file_format="png"/>
+        <file name="tickets_icon" src_path="images/tickets_icon.png" file_format="png"/>
+        <file name="luggage_icon" src_path="images/luggage_icon.png" file_format="png"/>
+        <file name="airplane_icon" src_path="images/airplane_icon.png" file_format="png"/>
+    </images>
+
+    <fonts>
+        <!-- Add <bin> , <tiny_ttf>, <freetype> tags here -->
+        <tiny_ttf name="inter_16" src_path="fonts/Inter_24pt_Regular.ttf" size="16" as_file="true" />
+        <tiny_ttf name="inter_24" src_path="fonts/Inter_24pt_Regular.ttf" size="24" as_file="true" />
+        <tiny_ttf name="inter_30" src_path="fonts/Inter_24pt_Regular.ttf" size="30" as_file="true" />
+
+        <tiny_ttf name="nn_regular_16" src_path="fonts/NunitoSans_10pt_Regular.ttf" size="16" as_file="true" />
+        <tiny_ttf name="nn_regular_24" src_path="fonts/NunitoSans_10pt_Regular.ttf" size="24" as_file="true" />
+        <tiny_ttf name="nn_bold_24" src_path="fonts/NunitoSans_10pt_Bold.ttf" size="24" as_file="true" />
+        <tiny_ttf name="nn_regular_30" src_path="fonts/NunitoSans_10pt_Regular.ttf" size="30" as_file="true" />
+        <tiny_ttf name="nn_bold_30" src_path="fonts/NunitoSans_10pt_Bold.ttf" size="30" as_file="true" />
+    </fonts>
+
+    <subjects>
+        <string name="name" value="Felix Biego" />
+        <string name="seat" value="5A" />
+        <string name="flight" value="JM8669" />
+        <string name="terminal" value="1D" />
+        <string name="boarding" value="11:55" />
+        <string name="gate" value="4" />
+        <string name="tier" value="Emerald" />
+        <string name="loyalty" value="JM000XXX000" />
+        <int name="points" value="673" />
+    </subjects>
+</globals>

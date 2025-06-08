@@ -1,0 +1,62 @@
+<screen>
+    <consts>
+        
+    </consts>
+
+    <styles>
+        <style name="card_outline"
+            width="440"
+            height="200"
+            bg_color="0xFFFFFF"
+            border_color="0xE20177" 
+            text_color="0xE20177"
+            text_font="nn_regular_24"
+            />
+
+        <style name="card_filled"
+            width="440"
+            height="200"
+            bg_color="0xE20177"
+            border_color="0xE20177" 
+            text_color="0xFFFFFF"
+            text_font="nn_regular_24"
+            />
+
+        <style name="no_bar"
+            outline_opa="0"
+            outline_width="0"
+            bg_opa="0" />
+        
+    </styles>
+    <view extends="lv_obj" styles="light_theme flex_ver">
+
+        <lv_image src="logo"></lv_image>
+
+        <lv_obj styles="card_filled">
+            <lv_label text="Fel" bind_text="name" style_text_font="nn_bold_24"></lv_label>
+            <lv_label text="Eme" bind_text="tier" align="top_right"></lv_label>
+            <lv_label text="JM2022000XXX" bind_text="loyalty" align="bottom_left" style_text_font="nn_regular_16"></lv_label>
+            <lv_label text="58" bind_text="points" align="bottom_right" style_text_font="nn_bold_30"></lv_label>
+            <lv_label text="Points" align="bottom_right" y="-35" style_text_font="nn_regular_16"></lv_label>
+            <lv_image src="emerald_icon" align="center"></lv_image>
+        </lv_obj>
+
+        <lv_obj styles="card_outline">
+            <lv_label text="Book Flight" align="top_mid"></lv_label>
+            <lv_image src="tickets_icon" align="center"></lv_image>
+        </lv_obj>
+
+        <lv_obj styles="card_outline" hidden="true">
+            <lv_label text="No Upcoming Flights" align="top_mid"></lv_label>
+            <lv_image src="luggage_icon" align="center"></lv_image>
+        </lv_obj>
+
+        <lv_obj styles="card_outline flex_ver no_bar:scrollbar" style_pad_row="5" style_pad_all="0">
+            <lv_label text="Upcoming Flights" align="top_mid"></lv_label>
+            <upcoming ></upcoming>
+            <upcoming ></upcoming>
+        </lv_obj>
+
+
+    </view>
+</screen>

@@ -1,0 +1,49 @@
+<screen>
+    <consts>
+        
+    </consts>
+
+    <styles>
+        <style name="card_outline"
+            width="440"
+            height="200"
+            bg_color="0xFFFFFF"
+            border_color="0xE20177" 
+            text_color="0xE20177"
+            text_font="nn_regular_24"
+            />
+
+        <style name="card_filled"
+            width="440"
+            height="200"
+            bg_color="0xE20177"
+            border_color="0xE20177" 
+            text_color="0xFFFFFF"
+            text_font="nn_regular_24"
+            />
+        
+    </styles>
+    <view extends="lv_obj" styles="light_theme flex_ver" style_pad_row="20">
+
+        <lv_image src="logo"></lv_image>
+
+        <flights></flights>
+
+        <lv_obj styles="card_outline flex_ver" style_pad_row="20" style_pad_all="10" height="620" >
+            <lv_label text="My Ticket" align="top_mid"></lv_label>
+
+            <lv_label text="Felix Bo" bind_text="name" style_text_font="nn_bold_30"></lv_label>
+            <lv_obj styles="light_theme" style_text_font="nn_regular_24" width="100%" style_pad_left="10" style_pad_right="10" height="80">
+                <lv_label text="Flight No: JM8668" bind_text="flight 'Flight No: %s'"></lv_label>
+                <lv_label text="Seat: 5A" bind_text="seat 'Seat: %s'" align="top_right"></lv_label>
+                <lv_label text="Terminal: 1D" bind_text="terminal 'Terminal: %s'" align="bottom_left"></lv_label>
+                <lv_label text="Gate:3" bind_text="gate 'Gate: %s'" align="bottom_right"></lv_label>
+            </lv_obj>
+            <lv_label text="Boarding: 11:55" bind_text="boarding 'Boarding: %s'" width="100%" style_pad_left="10" style_pad_right="10"></lv_label>
+            <lv_obj styles="card_outline" width="300" height="300"></lv_obj>
+
+        </lv_obj>
+
+
+    </view>
+</screen>

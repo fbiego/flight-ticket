@@ -1,0 +1,48 @@
+<component>
+    <previews>
+        <preview height="55" width="440"/>
+    </previews>
+    <api>
+        <prop name="info1" type="string" default="JM8668 to Eldoret • Terminal 1D"></prop>
+        <prop name="info2" type="string" default="Seat 2A • Boarding: 11:55"></prop>
+    </api>
+
+    <styles>
+        <style name="card_outline"
+            width="440"
+            height="55"
+            bg_color="0xFFFFFF"
+            border_color="0xE20177" 
+            border_width="1"
+            border_side="bottom"
+            radius="0"
+            text_color="0xE20177"
+            text_font="nn_regular_16"
+            pad_left="10"
+            pad_right="10"
+            pad_top="5"
+            pad_bottom="5"
+            />
+        <style name="slider"
+            width="380"
+            height="2"
+            bg_color="0xE20177"
+            />
+        <style name="slider_indic"
+            bg_color="0xE20177"
+            border_color="0xE20177" 
+            bg_opa="200"
+            width="20"
+            />
+    </styles>
+
+    <view extends="lv_obj" styles="light_theme card_outline">
+
+        <lv_image src="airplane_icon" align="right_mid"></lv_image>
+        <lv_label text="$info1"></lv_label>
+        <lv_label text="$info2" align="bottom_left"></lv_label>
+
+
+    </view>
+    
+</component>
