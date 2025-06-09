@@ -9,7 +9,7 @@ A simple UI designed with LVGL Editor (using the new XML support in LVGL v9.3), 
 
 [`LVGL Editor`](https://github.com/lvgl/lvgl_editor)
 
-Open the folder [jmabojet](src/jambojet/) using LVGL Editor
+Open the folder [src/jambojet](src/jambojet/) using LVGL Editor
 
 ### Hardware
 
